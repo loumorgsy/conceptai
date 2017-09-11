@@ -31,13 +31,13 @@
 		width: 50%;
 		float: right;
 		overflow: hidden;
-		height: 800px;
+		height: 870px;
 		margin-right: -4px;
 		position: relative;
 		img {
 			position: absolute;
 			top: 0;
-			right: 0;
+			left: 0;
 			height: 100%;
 		}
 	}
