@@ -1,0 +1,38 @@
+.solutions {
+	position: relative;
+	padding: 50px 0;
+	.solutions_title {
+		text-align: center;
+		position: relative;
+		.line {
+			position: absolute;
+			transform: translateY(-50%);
+			top: 50%;
+			right: -30px;
+			&.left {
+				transform: rotate(180deg) translateY(-50%);
+				left: -30px;
+				right: initial;
+			}
+
+		}
+	}
+	.solution_icons {
+		width: 100%;
+		position: relative;
+		height: 200px;
+		.icon {
+			display: inline-block;
+			width: 20%;
+			margin-right: -4px;
+			text-align: center;
+			p {
+				margin-top: 25px;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 18px;
+			}
+
+		}
+	}
+}

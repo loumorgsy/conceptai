@@ -1,0 +1,35 @@
+.button {
+	display: inline-block;
+	font-size: $button_size;
+	line-height: $button_line;
+	padding: 10px;
+	color: $black;
+	text-decoration: none;
+	font-weight: bold;
+	&.white {
+		color: $white;
+	}
+	&.border {
+		border: 2px solid $white;
+		border-radius: 12px;
+	}
+}
+.arrow {
+	color: $black;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	&.yellow {
+		color: $yellow;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		display: block;
+		background-image: url('../images/svg/arrow.svg');
+		height: 10px;
+		width: 20px;
+		z-index: 10;
+	}
+}

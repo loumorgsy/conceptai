@@ -1,0 +1,25 @@
+h1,h2,h3,h4,h5,h6,p, a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: $title;
+	line-height: $title_line;
+	margin: 0 0 20px 0;
+}
+h3 {
+	font-size: $subheading;
+	line-height: $sub_line;
+	margin: 0 0 20px 0;
+}
+h4 {
+	font-size: $small_heading;
+	line-height: $small_heading_line;
+	margin: 0 0 20px 0;
+}
+p {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 0 20px 0;
+	font-weight: 100;
+}

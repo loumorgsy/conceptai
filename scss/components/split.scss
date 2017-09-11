@@ -1,0 +1,78 @@
+.split {
+	position: relative;
+	overflow: hidden;
+	.left {
+		width: 50%;
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+		position: relative;
+		padding: 70px 0;
+		.inner {
+			width: 60%;
+			margin: 0 auto;
+			position: relative;
+			z-index: 10;
+		}
+		&:after {
+			content: " ";
+			display: block;
+			height: 900px;
+			width: 190px;
+			position: absolute;
+			top: 0;
+			right: -50px;
+			transform: rotate(-5deg);
+			z-index: 1;
+			background-color: $white;
+		}
+	}
+	.right {
+		width: 50%;
+		float: right;
+		overflow: hidden;
+		height: 800px;
+		margin-right: -4px;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+		}
+	}
+	&.gradient {
+		height: 900px;
+		overflow: hidden;
+		position: relative;
+		z-index: 10;
+		padding-top: 0;
+		width: 100%;
+		background: linear-gradient(130deg, rgba(33,33,33,1) 0%, rgba(255,255,255,1) 100%); 
+		.left {
+			transform: translateY(-50%);
+			top: 50%;
+			.icon {
+				height: 50px;
+				width: auto;
+				margin-bottom: 50px;
+			}
+			.inner  {
+				color: $white;
+			}
+			&:after {
+				display: none;
+			}
+		}
+		.back {
+			width: 100%;
+			position: absolute;
+			.laptop {
+				width: auto;
+				height: 100%;
+				position: relative;
+				left: 45%;
+			}
+		}
+	}
+}
